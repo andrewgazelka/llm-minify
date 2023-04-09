@@ -4,7 +4,6 @@ Minimize the number of tokens a file requires for an LLM to understand it.
 For instance:
 
 ```html
-
 <xml>
     <foo>
         <bar>baz</bar>
