@@ -1,20 +1,13 @@
 # llm-minify
 
-Minimize the number of tokens a file requires for an LLM to understand it.
-For instance:
+## Goals
+- Minimize the number of tokens a file requires for GPT4 to understand it
+- Change the form so it is best understood by GPT4 (anecdotally it seems $\text{JSON} > \text{XML} > \text{RON}$)
+  - this makes sense given GPT4 was probably trained on a lot of JSON
 
-```html
-<xml>
-    <foo>
-        <bar>baz</bar>
-    </foo>
-</xml>
-```
+## Supported Files
 
-becomes
-
-```text
-a=xml,b=foo,c=bar
-<a><b><c>baz</c></b></a>
-```
-
+- [x] SVD
+- [ ] XML
+- [ ] JSON
+- [ ] CSV
